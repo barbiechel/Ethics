@@ -132,81 +132,68 @@ div.content {
  <div class="content">
    <p> CONTENT GOES HERE....</p>
   </div>
-  <style>
-body, html {
-  height: 100%;
-  margin: 0;
-}
+  
+<!-- CONTACT US -->
+ <style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
 
-.bg {
-  /* The image used */
-  background-image: url("img/coop.jpg");
-
-  /* Full height */
-  height: 45%; 
-
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-</style>
-</div>  
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-body {
-  font-family: Arial;
-}
-
-* {
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
   box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
 }
 
-form.example input[type=text] {
-  padding: 10px;
-  font-size: 17px;
-  border: 1px solid grey;
-  float: left;
-  width: 80%;
-  background: #f1f1f1;
-}
-
-form.example button {
-  margin-left: 200px;
-  float: left;
-  width: 20%;
-  padding: 10px;
-  background: #2196F3;
+input[type=submit] {
+  background-color: #04AA6D;
   color: white;
-  font-size: 17px;
-  border: 1px solid grey;
-  border-left: none;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
   cursor: pointer;
 }
 
-form.example button:hover {
-  background: #0b7dda;
+input[type=submit]:hover {
+  background-color: #45a049;
 }
 
-form.example::after {
-  content: "";
-  clear: both;
-  display: table;
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
 }
 </style>
-<h2>Search Button</h2>
+</head>
+<body>
 
-<p>Full width:</p>
-<form class="example" action="/action_page.php">
-  <input type="text" placeholder="Search.." name="search">
-  <button type="submit"><i class="fa fa-search"></i></button>
-</form>
+<h3>Contact Form</h3>
 
-<p>Centered inside a form with max-width:</p>
-<form class="example" action="/action_page.php" style="margin:auto;max-width:300px">
-  <input type="text" placeholder="Search.." name="search2">
-  <button type="submit"><i class="fa fa-search"></i></button>
-</form>
+<div class="container">
+  <form action="/action_page.php">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
 
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="australia">Phillipines</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+    </select>
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
+  
 </body>
 </html>
