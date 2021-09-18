@@ -126,31 +126,32 @@ div.content {
                       <a href="Pages/meettheteam.html" target="_self">Meet The Team  </a>
                       <a href="Pages/about.html" target="_self">Code of Ethical Standards  </a>
                   </div>
-                                                               
-/* Create three unequal columns that floats next to each other */
+                                                              
+ <!-- Create three unequal columns that floats next to each other -->
 .column {
   float: left;
   padding: 10px;
 }
 
-/* Left and right column */
+<!-- Left and right column -->
 .column.side {
   width: 10%;
 }
 
-/* Middle column */
+<!-- Middle column -->
+           
 .column.middle {
   width: 50%;
 }
 
-/* Clear floats after the columns */
+<!-- Clear floats after the columns -->
 .row:after {
   content: "";
   display: table;
   clear: both;
 }
 
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+<!-- Responsive layout - makes the three columns stack on top of each other instead of next to each other -->
 @media screen and (max-width: 600px) {
   .column.side, .column.middle {
     width: 100%;
